@@ -85,13 +85,13 @@ function createPaymentRequest() {
 
     }];
     // Add other supported payment methods.
-    methodData.push({
+    /*methodData.push({
       supportedMethods: 'basic-card',
       data: {
         supportedNetworks:
             Array.from(allowedCardNetworks, (network) => network.toLowerCase())
       }
-    });
+    });*/
 
     const details = {
         total: { label: 'Test Purchase', amount: { currency: 'EUR', value: '10.00' } }
